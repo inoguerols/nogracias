@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>nogracias — filtra los correos de "soluciones IA" que nunca pediste</title>
+<meta name="description" content="Herramienta open-source que filtra automáticamente la avalancha de correos de venta no solicitados (soluciones IA, marketing, captación). Reglas + capa IA opcional. Mueve, nunca borra.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="nogracias — filtra los correos de venta IA no solicitados">
+<meta property="og:description" content="Open-source. Reglas + capa IA opcional (local o nube). Funciona en Sieve, Gmail o IMAP. Mueve a una carpeta, nunca borra.">
+<meta property="og:url" content="https://inoguerols.github.io/nogracias/">
+<meta name="twitter:card" content="summary">
+<style>
+  :root{
+    --ink:#0f172a; --ink2:#1e293b; --muted:#64748b; --line:#e2e8f0;
+    --bg:#ffffff; --soft:#f8fafc; --green:#16a34a; --green2:#22c55e; --red:#ef4444;
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; color:var(--ink); background:var(--bg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--green);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:980px;margin:0 auto;padding:0 22px}
+  section{padding:64px 0}
+  h1,h2,h3{line-height:1.2;letter-spacing:-.02em;margin:0 0 .4em}
+  h2{font-size:1.9rem;margin-bottom:.2em}
+  .lead{color:var(--muted);font-size:1.1rem;max-width:680px}
+  .tag{display:inline-block;font-size:.78rem;font-weight:600;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--green);background:#dcfce7;padding:5px 11px;border-radius:999px}
+  /* hero */
+  .hero{background:radial-gradient(1200px 500px at 70% -10%,#13351f 0,transparent 55%),var(--ink);
+    color:#fff;padding:84px 0 76px}
+  .hero h1{font-size:clamp(2.1rem,5vw,3.3rem)}
+  .hero p{color:#cbd5e1;font-size:1.18rem;max-width:640px}
+  .hero .tag{background:rgba(34,197,94,.15);color:#86efac}
+  .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:11px;
+    font-weight:600;font-size:.98rem}
+  .btn-p{background:var(--green2);color:#04210f}
+  .btn-p:hover{background:#16a34a;text-decoration:none}
+  .btn-g{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.18)}
+  .btn-g:hover{background:rgba(255,255,255,.14);text-decoration:none}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  /* email examples */
+  .inbox{margin-top:22px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff}
+  .mailrow{display:flex;gap:12px;align-items:flex-start;padding:13px 16px;border-bottom:1px solid var(--line)}
+  .mailrow:last-child{border-bottom:0}
+  .mailrow .dot{flex:0 0 auto;width:9px;height:9px;border-radius:50%;background:var(--red);margin-top:8px}
+  .mailrow .who{font-weight:600;font-size:.9rem;color:var(--ink2)}
+  .mailrow .subj{color:var(--muted);font-size:.92rem}
+  .badge{margin-left:auto;flex:0 0 auto;font-size:.72rem;font-weight:700;color:#92400e;background:#fef3c7;
+    padding:3px 9px;border-radius:999px;white-space:nowrap;align-self:center}
+  /* steps */
+  .flow{display:grid;grid-template-columns:1fr;gap:14px;margin-top:26px}
+  .step{display:flex;gap:16px;align-items:flex-start;padding:18px 20px;background:var(--soft);
+    border:1px solid var(--line);border-radius:var(--radius)}
+  .step .n{flex:0 0 auto;width:34px;height:34px;border-radius:50%;background:var(--ink);color:#fff;
+    display:grid;place-items:center;font-weight:700}
+  .step h3{font-size:1.05rem;margin:0 0 3px}
+  .step p{margin:0;color:var(--muted);font-size:.96rem}
+  .step.green .n{background:var(--green)}
+  /* cards */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:26px}
+  .card{padding:22px;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
+  .card h3{font-size:1.05rem}
+  .card p{margin:0;color:var(--muted);font-size:.95rem}
+  .card .k{font-size:.8rem;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em}
+  table{width:100%;border-collapse:collapse;margin-top:22px;font-size:.95rem}
+  th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+  .soft{background:var(--soft)}
+  ul.clean{list-style:none;padding:0;margin:18px 0 0}
+  ul.clean li{padding:8px 0 8px 30px;position:relative;color:var(--ink2)}
+  ul.clean li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:800}
+  pre{background:var(--ink);color:#e2e8f0;padding:16px 18px;border-radius:12px;overflow:auto;font-size:.86rem;margin-top:10px}
+  footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-size:.9rem}
+  .center{text-align:center}
+  .note{font-size:.86rem;color:var(--muted);margin-top:8px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="tag">Open source · MIT</span>
+    <h1>nogracias</h1>
+    <p>Filtra automáticamente la avalancha de correos que te venden <strong>"soluciones de IA"</strong>, marketing y captación que nunca pediste. Y sí — usando IA para filtrar a quien te la intenta vender.</p>
+    <div class="btns">
+      <a class="btn btn-p" href="https://github.com/inoguerols/nogracias">★ Ver en GitHub</a>
+      <a class="btn btn-g" href="#como">Cómo funciona</a>
+    </div>
+  </div>
+</header>
+
+<section id="problema">
+  <div class="wrap">
+    <span class="tag">El problema</span>
+    <h2>No es spam normal. Por eso no lo caza nadie.</h2>
+    <p class="lead">Llegan con remitente real, pasan todos los antispam, te llaman por tu nombre, fingen ser respuestas a conversaciones que nunca existieron y tocan justo tus puntos de dolor. Ejemplos reales:</p>
+    <div class="inbox">
+      <div class="mailrow"><span class="dot"></span><div><div class="who">Comercial desconocido</div><div class="subj">¿La IA recomienda tu clínica o la de tu competencia?</div></div><span class="badge">venta IA</span></div>
+      <div class="mailrow"><span class="dot"></span><div><div class="who">Agencia de marketing</div><div class="subj">Deja de perder leads en Meta (te lo soluciono)</div></div><span class="badge">marketing</span></div>
+      <div class="mailrow"><span class="dot"></span><div><div class="who">SDR con tu nombre</div><div class="subj">Attn. [tu nombre] — propuesta de gestión digital</div></div><span class="badge">cold sales</span></div>
+      <div class="mailrow"><span class="dot"></span><div><div class="who">Falsa respuesta</div><div class="subj">Re: tu clínica en Google</div></div><span class="badge">"Re:" falso</span></div>
+      <div class="mailrow"><span class="dot"></span><div><div class="who">Gancho de dolor</div><div class="subj">¿Quién revisa los fichajes en tu clínica?</div></div><span class="badge">automatización</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="como" class="soft" style="background:var(--soft)">
+  <div class="wrap">
+    <span class="tag">Cómo funciona</span>
+    <h2>Dos capas, mínimo coste, y nunca borra.</h2>
+    <p class="lead">Cada correo recorre un embudo. Lo barato y seguro primero; la IA solo para lo dudoso.</p>
+    <div class="flow">
+      <div class="step green"><div class="n">1</div><div><h3>Lista de confianza</h3><p>¿De un dominio tuyo, un proveedor o tu banco? Se queda en la bandeja. Gratis e instantáneo.</p></div></div>
+      <div class="step"><div class="n">2</div><div><h3>Reglas (gratis)</h3><p>Puntúan cada correo por señales: IA, captación, competencia, reseñas, fichajes, SEO/Google, marketing/Meta, ganchos de pregunta, "Re:" falso… <strong>Ninguna señal marca sola: hacen falta ≥2 combinadas</strong>, así no se come correo legítimo.</p></div></div>
+      <div class="step"><div class="n">3</div><div><h3>Capa IA opcional</h3><p>Solo para lo que las reglas no tienen claro: un modelo lee el correo y juzga por <em>sentido</em> "¿venta no solicitada? sí/no". Caza fraseos nuevos y en cualquier idioma, sin perseguir palabras.</p></div></div>
+      <div class="step green"><div class="n">4</div><div><h3>A una carpeta — nunca borra</h3><p>Lo marcado se <strong>mueve</strong> a una carpeta aparte que revisas cuando quieras. Si algo se equivoca, lo recuperas. Cero correos importantes perdidos.</p></div></div>
+    </div>
+    <p class="note">Validado contra un buzón real: <strong>0 falsos positivos</strong> sobre 30 correos legítimos (pacientes, proveedores, gestoría, banco).</p>
+  </div>
+</section>
+
+<section id="instalar">
+  <div class="wrap">
+    <span class="tag">Dónde se instala</span>
+    <h2>Funciona en cualquier correo.</h2>
+    <p class="lead">Una sola lista de reglas (<span class="mono">rules.json</span>) genera los instaladores de cada servicio. Lo importante es dónde se <em>entrega</em> tu correo, no qué app usas para leerlo.</p>
+    <table>
+      <tr><th>Tu correo está en…</th><th>Cómo se instala</th><th>Lleva IA</th></tr>
+      <tr><td>Servidor con <strong>Sieve</strong> (Plesk, cPanel, Fastmail, mailbox.org, Migadu…)</td><td>Pegar <span class="mono">nogracias.sieve</span> en los filtros del webmail</td><td>—</td></tr>
+      <tr class="soft"><td><strong>Gmail / Google Workspace</strong></td><td>Importar <span class="mono">gmail-filters.xml</span></td><td>—</td></tr>
+      <tr><td><strong>Outlook / Microsoft 365</strong> o cualquier IMAP</td><td><span class="mono">filter.py</span> (cron / GitHub Actions / Docker)</td><td>✅</td></tr>
+    </table>
+    <p class="note">Los filtros del servidor (Sieve/Gmail) son siempre-activos pero solo por reglas. La capa IA vive en <span class="mono">filter.py</span>.</p>
+  </div>
+</section>
+
+<section class="soft" style="background:var(--soft)" id="ia">
+  <div class="wrap">
+    <span class="tag">Capa IA opcional</span>
+    <h2>Trae tu modelo. O ninguno.</h2>
+    <p class="lead">Apagada por defecto. Habla el formato estándar de OpenAI con la librería de serie de Python (sin SDKs), así que vale cualquier proveedor — o un modelo local.</p>
+    <div class="grid">
+      <div class="card"><div class="k">Nube</div><h3>Tu API key</h3><p>Anthropic, OpenAI, Groq, OpenRouter… Céntimos al mes con un modelo barato.</p></div>
+      <div class="card"><div class="k">Local · gratis</div><h3>Ollama / LM Studio</h3><p>Corre en tu máquina. <strong>El correo no sale de ahí.</strong> Coste cero.</p></div>
+      <div class="card"><div class="k">Nada</div><h3>Solo reglas</h3><p>Sin clave, funciona igual con reglas. Gratis y sin enviar nada a ningún sitio.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="seguridad">
+  <div class="wrap">
+    <span class="tag">Privacidad y seguridad</span>
+    <h2>Pensado para no fastidiarla.</h2>
+    <ul class="clean">
+      <li><strong>Mueve o etiqueta, nunca borra.</strong> Nada se pierde.</li>
+      <li><strong>Sin dependencias.</strong> Solo Python de serie; auditas el código en un rato.</li>
+      <li><strong>Tus credenciales se quedan en local</strong> (un <span class="mono">.env</span> que no se sube) o en secrets cifrados.</li>
+      <li><strong>Con IA local, el correo no sale de tu servidor.</strong></li>
+      <li><strong>Lista de confianza</strong> para que nunca se toque correo de pacientes, proveedores o tu banco.</li>
+    </ul>
+    <p class="lead" style="margin-top:30px">Empieza en un minuto:</p>
+<pre>git clone https://github.com/inoguerols/nogracias
+cd nogracias
+python3 filter.py --self-check     # prueba el clasificador, sin tocar tu correo</pre>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap center">
+    <p><a href="https://github.com/inoguerols/nogracias"><strong>github.com/inoguerols/nogracias</strong></a> · Licencia MIT</p>
+    <p>Hecho por un gerente harto de que le vendan IA por correo. Open source, por si hay más gente así.</p>
+  </div>
+</footer>
+
+</body>
+</html>

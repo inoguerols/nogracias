@@ -1,0 +1,446 @@
+[
+  {
+    "subject": "Clínica Ejemplo la IA recomienda tu CLINICA o la de tu competencia?",
+    "body": "",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "¿Qué tal os va con la captación de clientes?",
+    "body": "",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "¿Quién revisa los fichajes en tu clínica?",
+    "body": "",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "¿Qué tal os va con la captación de pacientes este año?",
+    "body": "Hola, soy Marta de GrowDental. Estamos ayudando a clínicas dentales de Granada a conseguir más pacientes cada mes. ¿Te va bien una breve llamada de 15 minutos esta semana para enseñártelo sin compromiso?",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "¿Quién revisa los fichajes en tu clínica?",
+    "body": "Me imagino que el control horario del personal os quita tiempo cada mes. Hemos creado una herramienta que automatiza los fichajes para clínicas. ¿Te cuento cómo en una breve llamada?",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Clínica Ejemplo, ¿la IA recomienda tu clínica o la de tu competencia?",
+    "body": "Cada vez más pacientes preguntan a ChatGPT por un dentista en su zona. Podemos hacer que tu clínica aparezca cuando preguntan a la IA. Otras clínicas dentales ya están apareciendo, te lo enseño en una demo gratuita.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "¿Estáis aprovechando la IA para llenar la agenda?",
+    "body": "¿Cómo lleváis la captación últimamente? Ayudamos a clínicas como la tuya a reducir las ausencias y llenar la agenda con automatización. Si te interesa te explico en una llamada rápida, sin compromiso.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "¿Cómo gestionáis las reseñas de Google en la clínica?",
+    "body": "Tener más reseñas en Google ayuda a destacar frente a la competencia y a captar más pacientes. Te mando más información sin compromiso, ¿te parece?",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "¿Te has planteado lo que tu competencia hace con la IA?",
+    "body": "Una pregunta rápida sobre tu clínica: ¿sabías que la IA recomienda dentistas a los pacientes? Te enseño un caso de éxito de otra clínica dental. ¿Quedamos un día esta semana?",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Clínica Ejemplo, ¿la IA recomienda tu clínica o la de tu competencia?",
+    "body": "Cada vez más pacientes preguntan a ChatGPT qué dentista elegir en Granada. Si tu clínica no aparece, la están recomendando a la competencia. Te enseño en 15 minutos cómo aparecer el primero.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "¿Cuántos pacientes pierdes cada mes por citas que no acuden?",
+    "body": "Las ausencias están costando a tu clínica miles de euros al año. Con recordatorios automáticos de citas reducimos los no shows hasta un 60%. ¿Te interesaría verlo en una breve llamada sin compromiso?",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Tu clínica dental tiene cientos de pacientes inactivos esperando",
+    "body": "En vuestra base de datos de pacientes hay gente que lleva más de un año sin volver. Reactivamos esos pacientes dormidos con un mensaje automático. Otras clínicas como la tuya ya están recuperando 30 pacientes al mes.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "¿Cómo lleváis la captación de pacientes este año?",
+    "body": "Trabajo con clínicas dentales en Granada ayudándoles a llenar la agenda con pacientes de alto valor. ¿Tienes 15 minutos esta semana para que te enseñe un caso de éxito?",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "¿Quién revisa los fichajes en tu clínica?",
+    "body": "El control horario de tu equipo en papel te hace perder tiempo y te expone a sanciones. Digitalizamos los fichajes de tu equipo en un día. ¿Lo vemos sin compromiso?",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Clínica Ejemplo, ¿te adelanta la competencia en Google?",
+    "body": "Tus pacientes eligen por las reseñas, y ahora mismo otras clínicas de Granada tienen más valoraciones que tú. Conseguimos más reseñas en Google de forma automática y mejoramos tu reputación online.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Clinica Ejemplo, ¿quien contesta el WhatsApp cuando estais con un paciente?",
+    "body": "He montado un agente de IA que responde los mensajes y agenda las citas por vosotros, 24/7. Si quieres te hago una demo de 10 minutos sin compromiso.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "¿Cuantas llamadas se quedan sin atender en la clinica?",
+    "body": "Tenemos un asistente virtual con IA que contesta las llamadas perdidas y reserva la cita automaticamente. Trabaja por ti mientras estais en consulta.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Una recepcionista virtual para Clinica Ejemplo",
+    "body": "La IA ya puede atender la recepcion: responde llamadas y WhatsApp, resuelve dudas y rellena tu agenda sola. Te dejo un video de como funciona en otra clinica dental.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "¿Respondeis todas las reseñas de Google?",
+    "body": "Automatizamos las respuestas a tus reseñas con IA para mejorar tu reputacion online sin que tengais que dedicarle tiempo. ¿Te enseño una demo gratuita?",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Un chatbot para la web de tu clinica",
+    "body": "Instalamos un chatbot con inteligencia artificial en tu web que capta pacientes y agenda citas en piloto automatico, disponible 24/7. ¿Agendamos una llamada de 15 minutos?",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "La IA puede atender a tus pacientes antes que tu competencia",
+    "body": "Un agente conversacional contesta llamadas y mensajes al instante, sin que muevas un dedo. Las clinicas que ya lo usan no pierden ni una llamada.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Estuve viendo la web de Clínica Ejemplo",
+    "body": "Hola, estuve echando un vistazo a vuestra web y me llamó la atención el trabajo que hacéis ahí en Granada. Me he fijado en que ofrecéis implantología y quería comentaros una idea para captar más pacientes.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Vuestra clínica en Granada",
+    "body": "Encontré vuestra clínica buscando dentistas en la zona de Granada. He visto vuestras reseñas en Google y tenéis muy buena pinta. ¿Tendríais 15 minutos esta semana?",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Una idea tras ver vuestra página",
+    "body": "Después de visitar vuestra web me di cuenta de que vuestra ficha de Google no aparece en las primeras posiciones. Ayudamos a clínicas dentales como la vuestra a posicionarse mejor y a atraer más pacientes.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Clínica Ejemplo, me ha encantado lo que hacéis",
+    "body": "Estuve viendo lo que hacéis y enhorabuena por vuestra clínica. Trabajo con varias clínicas dentales en Granada y creo que os podría encajar bien lo que ofrecemos.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Came across your dental clinic in Granada",
+    "body": "Hi, I came across your website while researching dental clinics in Granada and I noticed your clinic doesn't rank well on Google. Would love to share a quick idea with you.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "He estado mirando vuestra web",
+    "body": "Hola, he estado mirando vuestra web y vi que trabajáis la ortodoncia invisible. Me pongo en contacto porque ayudamos a clínicas como la vuestra a conseguir más pacientes.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "¿Pudiste ver mi anterior correo, Clínica Ejemplo?",
+    "body": "Te escribo de nuevo por si se traspapeló entre tantos correos. Solo quería hacer seguimiento de la propuesta para llenar tu agenda de nuevos pacientes. ¿Te viene bien una llamada de 15 minutos esta semana?",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Última vez que te escribo :)",
+    "body": "Prometo no insistir más. Como te comentaba en mi anterior email, podemos automatizar la captación de pacientes de tu clínica. Si no me dices nada, doy por cerrado el tema y te dejo tranquilo.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Seguimiento - software para tu clínica dental",
+    "body": "Hola, te vuelvo a escribir porque no sé si viste mi correo de la semana pasada. ¿Sigue en pie tu interés en mejorar la gestión de fichajes? Buscamos un hueco en tu agenda cuando te venga bien.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "¿Lo dejamos para más adelante?",
+    "body": "Entiendo que ahora puede ser mal momento. Solo quería hacer seguimiento de mi propuesta de marketing. Si te sigue interesando captar más pacientes, reagendamos una llamada rápida.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Just following up :)",
+    "body": "Hola Clínica Ejemplo, did you get a chance to read my previous email? Te escribo de nuevo para retomar la conversación sobre la IA que recomienda tu clínica frente a la competencia. ¿Te animas a quince minutos?",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Subo este correo a tu bandeja",
+    "body": "Por si se perdió entre tantos correos, te lo dejo arriba. Este es mi último intento de contactar contigo sobre la solución para llenar los huecos de la agenda. ¿Te viene bien que hablemos mañana?",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Clínica Ejemplo, ¿tienes 15 min esta semana?",
+    "body": "Trabajo con varias clínicas dentales en Granada y me encantaría enseñarte en una llamada rápida cómo están captando más primeras visitas. ¿Te viene mejor el martes o el jueves por la tarde? Sin compromiso, no te robo más de 15 minutos.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "¿Agendamos una llamada rápida?",
+    "body": "Te dejo aquí mi calendario para que elijas el hueco que mejor te venga. Es una demo de 15 minutos, sin ningún compromiso, y te muestro cómo funciona en directo.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Una idea para la Clínica Ejemplo",
+    "body": "Prefiero contártelo en 15 minutos que en un correo eterno. ¿Te encaja una videollamada esta semana o la que viene? Tú me dices qué día te viene mejor y me adapto a tu agenda.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "¿Hablamos 10 minutos?",
+    "body": "Hemos ayudado a clínicas como la tuya a reducir las ausencias de pacientes. Si te parece, cuadramos una llamada corta y te enseño cómo funciona. ¿El lunes o el miércoles?",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Te paso mi calendario",
+    "body": "Para no robarte tiempo, reserva directamente el hueco que prefieras en mi agenda. Son 15 minutos, una demo rápida y sin compromiso.",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Demo para tu clínica (sin compromiso)",
+    "body": "¿Tienes un hueco esta semana para una breve demostración? Te muestro en una llamada cómo otras clínicas dentales están automatizando la captación de pacientes. ¿Mañana por la mañana o por la tarde?",
+    "from": "ventas@coldsales-ia.com",
+    "expect": true
+  },
+  {
+    "subject": "Re: Clínica Ejemplo en Google",
+    "body": "",
+    "from": "marketing@seoboost.io",
+    "expect": true
+  },
+  {
+    "subject": "Demo de nuestro agente IA para tu negocio",
+    "body": "Nuestro agente IA y chatbot pueden automatizar la atención al cliente. Agenda una demo rápida sin compromiso.",
+    "from": "sales@aigrowth.io",
+    "expect": true
+  },
+  {
+    "subject": "Automatiza tu clínica con inteligencia artificial",
+    "body": "Te enseño en una demo cómo la IA puede llenar tu agenda.",
+    "from": "hola@iadental.com",
+    "expect": true
+  },
+  {
+    "subject": "Juan, Deja de perder leads en Meta (Te lo soluciono)",
+    "body": "Gestiono campañas en Meta para clínicas dentales y veo que estás dejando escapar pacientes. Te lo soluciono en una llamada de 15 minutos.",
+    "from": "growth@adsmeta.io",
+    "expect": true
+  },
+  {
+    "subject": "Más pacientes para Clínica Dental Ejemplo · Propuesta de marketing digital",
+    "body": "Te paso una propuesta de marketing digital para captar más pacientes. ¿Hablamos esta semana?",
+    "from": "comercial@marketingdental.es",
+    "expect": true
+  },
+  {
+    "subject": "¿Tu recepcionista pasa el día respondiendo siempre lo mismo?",
+    "body": "Un agente de IA puede responder las llamadas y los WhatsApp por ti, 24/7. Te hago una demo sin compromiso.",
+    "from": "hello@voiceai.io",
+    "expect": true
+  },
+  {
+    "subject": "Attn. Carlos Ejemplo",
+    "body": "Le escribo para presentarle nuestra solución de IA que automatiza la captación de pacientes para clínicas dentales. ¿Tiene 15 minutos esta semana?",
+    "from": "sdr@dentalgrowth.com",
+    "expect": true
+  },
+  {
+    "subject": "Caso real: +28% en eficiencia operativa en 45 días",
+    "body": "Implementamos agentes de IA en clínicas dentales y conseguimos +28% de eficiencia. Te enseño el caso real en una breve llamada.",
+    "from": "founder@clinicai.com",
+    "expect": true
+  },
+  {
+    "subject": "Puedes implementar agentes de voz en 2026 en Clínica Ejemplo ®️",
+    "body": "Nuestros agentes de voz con IA atienden las llamadas y agendan citas automáticamente. ¿Te hago una demo?",
+    "from": "ventas@voicebot.ai",
+    "expect": true
+  },
+  {
+    "subject": "A la atención de Juan Ejemplo García: propuesta de gestión Digital",
+    "body": "Le presento una propuesta de gestión digital y automatización para su clínica. Quedo a la espera para agendar una llamada.",
+    "from": "info@gestiondigital.es",
+    "expect": true
+  },
+  {
+    "subject": "Presupuesto implante sin compromiso",
+    "body": "Hola, me gustaria que me hicierais un presupuesto sin compromiso para un implante en la muela de arriba. Me lo recomendo mi dentista anterior. ¿Que dia teneis hueco para una primera visita? Gracias, Marta.",
+    "from": "marta.ruiz88@gmail.com",
+    "expect": false
+  },
+  {
+    "subject": "Llegare 15 minutos tarde a mi cita",
+    "body": "Buenos dias, tengo cita hoy a las 10:00 con la doctora pero llegare unos 15 minutos tarde por el trafico en Granada. ¿Hay algun problema o preferis que la cambie? Perdonad las molestias. Un saludo, Jose Antonio.",
+    "from": "jamolina.gr@hotmail.com",
+    "expect": false
+  },
+  {
+    "subject": "Una pregunta rapida sobre mi ortodoncia",
+    "body": "Hola, tengo una pregunta rapida sobre la ortodoncia que empece el mes pasado. ¿Es normal que me moleste el alambre al masticar? ¿Puedo haceros la pregunta por aqui o mejor llamo a la clinica? Gracias.",
+    "from": "lucia.fdez@gmail.com",
+    "expect": false
+  },
+  {
+    "subject": "¿Teneis huecos en la agenda esta semana?",
+    "body": "Buenas, se me ha roto una muela y tengo bastante dolor. ¿Como teneis la agenda esta semana? Necesito que me veais cuanto antes, es urgente. Soy paciente vuestro desde hace años. Gracias, Carmen.",
+    "from": "carmen.delgado1962@gmail.com",
+    "expect": false
+  },
+  {
+    "subject": "Gracias por la atencion en vuestra clinica",
+    "body": "Solo queria daros las gracias. Me ha encantado vuestra clinica y todo vuestro equipo me trato fenomenal en la limpieza de ayer. En cuanto pueda os dejo una reseña en Google. Un abrazo, Rosa.",
+    "from": "rosamaria.lopez@hotmail.es",
+    "expect": false
+  },
+  {
+    "subject": "Duda sobre financiacion y seguro Adeslas",
+    "body": "Hola, he visto en vuestra web que trabajais con Adeslas. ¿El empaste entra por el seguro o lo tengo que pagar aparte? Y para la ortodoncia de mi hija, ¿ofreceis financiacion en varios plazos? Gracias por adelantado.",
+    "from": "familia.serrano.gr@gmail.com",
+    "expect": false
+  },
+  {
+    "subject": "Cambiar mi cita del jueves",
+    "body": "Buenos dias, al final no puedo acudir a mi cita del jueves por trabajo. ¿Me podeis llamar o agendamos una llamada para buscar otro dia? Me viene mejor por la mañana o por la tarde a partir de las 18h. Gracias, Antonio.",
+    "from": "antonio.vargas77@gmail.com",
+    "expect": false
+  },
+  {
+    "subject": "¿Como gestionais las urgencias fuera de horario?",
+    "body": "Hola, soy paciente vuestro. Queria saber como gestionais las urgencias los fines de semana, por si me pasara algo con el implante que me pusisteis en mayo. ¿Hay un telefono de guardia? Muchas gracias.",
+    "from": "pedro.jimenez.granada@gmail.com",
+    "expect": false
+  },
+  {
+    "subject": "Factura 2026/0488 - corona de circonio (pedido #7741)",
+    "body": "Buenos días Juan. Adjuntamos la factura del pedido entregado el martes para tu clínica: una corona de circonio y dos férulas de descarga. El importe se cargará en la cuenta habitual el día 5. El albarán firmado va también adjunto. Cualquier duda, respóndenos. Un saludo.",
+    "from": "Laboratorio Protésico Granada <facturacion@labprogranada.es>",
+    "expect": false
+  },
+  {
+    "subject": "Aviso de adeudo en cuenta ****4471",
+    "body": "Le informamos de que el día 30/06 se cargará de forma automática el recibo de su seguro de responsabilidad civil profesional por importe de 312,40 EUR. Si los fondos son suficientes no necesita hacer nada. Puede consultar el detalle en su banca online.",
+    "from": "CaixaBank Notificaciones <no-reply@notificaciones.caixabank.es>",
+    "expect": false
+  },
+  {
+    "subject": "Cierre del 2T y recordatorio del registro horario",
+    "body": "Hola Juan, antes de presentar el modelo 130 del segundo trimestre necesitamos repasar un par de apuntes contigo. ¿Te viene bien que agendemos una reunión de 15 minutos esta semana? Dime qué día te viene mejor, el martes o el jueves. Aprovecho para recordarte que el registro de jornada del equipo debe archivarse cada mes; si necesitas ayuda con el control horario del personal lo vemos. Un saludo.",
+    "from": "Gestoría Morales Asesores <asesoria@moralesasesores.com>",
+    "expect": false
+  },
+  {
+    "subject": "Gesden 12.4 disponible: nuevo módulo de control de fichajes",
+    "body": "Hola, ya está disponible la actualización 12.4 de tu software de gestión. Incluye mejoras en la agenda y un nuevo módulo de control de fichajes para el personal. La instalación se hará de forma automática esta noche. Si quieres que te enseñemos las novedades, responde a este correo y te lo explicamos. Equipo de Soporte Gesden.",
+    "from": "Soporte Gesden <soporte@gesden.es>",
+    "expect": false
+  },
+  {
+    "subject": "Mantenimiento programado de vuestra web este domingo",
+    "body": "Estimado cliente, el domingo de 03:00 a 05:00 realizaremos tareas de mantenimiento en el servidor donde está alojada vuestra web. Durante esa franja vuestra página web podría no estar disponible unos minutos. No es necesario que hagáis nada. Disculpad las molestias.",
+    "from": "Trevenque Soporte <soporte@trevenque.es>",
+    "expect": false
+  },
+  {
+    "subject": "Seguimiento de tu pedido #DI-20631 (composite y anestesia)",
+    "body": "Hola Juan, te escribo para hacer seguimiento de tu pedido del composite y los carpules de articaína. La anestesia entra el jueves por rotura de stock del fabricante; el resto sale hoy. ¿Te lo mando todo junto o prefieres recibir lo disponible ya? Responde y lo gestionamos. Gracias.",
+    "from": "Dental Ibérica Suministros <pedidos@dentaliberica.com>",
+    "expect": false
+  },
+  {
+    "subject": "Curso del Colegio: captación de pacientes y reputación online para clínicas dentales",
+    "body": "Estimado colegiado, abrimos inscripción al curso presencial 'Captación de pacientes y reputación online para clínicas dentales', impartido el 18 de julio en la sede colegial. Plazas limitadas para colegiados. Programa y matrícula en el área privada de la web del Colegio. Un cordial saludo.",
+    "from": "Ilustre Colegio de Dentistas de Granada <formacion@dentistasgranada.org>",
+    "expect": false
+  },
+  {
+    "subject": "Revisión de las condiciones de tu TPV",
+    "body": "Hola Juan, soy tu gestor en la oficina de Granada. Me gustaría comentarte una mejora en las comisiones del datáfono de la clínica que ya tienes contratado. ¿Te viene bien una llamada rápida de 15 minutos? Dime si te va bien el martes o el jueves y te llamo. Un saludo.",
+    "from": "Banco Sabadell - Tu gestor <gestor.granada@bancsabadell.com>",
+    "expect": false
+  },
+  {
+    "subject": "¿Cuándo cuadramos la reunión de equipo de julio?",
+    "body": "Hola Juan, para cerrar el cuadrante de julio agendamos una reunión rápida con el equipo. Con 15 minutos basta. ¿Te viene bien el martes o el jueves por la mañana? Dime qué día te encaja y reservo la sala pequeña. Gracias.",
+    "from": "Marta Ruiz <recepcion@miclinica.example>",
+    "expect": false
+  },
+  {
+    "subject": "Sesión para colegiados: nueva normativa de registro de jornada",
+    "body": "Estimado colegiado: organizamos una sesión informativa sobre el control de jornada laboral y el registro horario del personal en las clínicas dentales tras la última reforma. Asistencia gratuita para colegiados, plazas limitadas. Inscríbete en el área privada del Colegio.",
+    "from": "Colegio de Dentistas de Granada <formacion@dentistasgranada.org>",
+    "expect": false
+  },
+  {
+    "subject": "Plaza confirmada: Inteligencia artificial aplicada a clínicas dentales",
+    "body": "Hola Juan, confirmamos tu inscripción al curso acreditado al que te apuntaste. Verás cómo usar la IA en el diagnóstico por imagen y qué soluciones de IA existen hoy para el día a día de las clínicas dentales. El temario y el acceso al aula virtual van adjuntos.",
+    "from": "Sociedad Española de Odontología Digital <cursos@seod.es>",
+    "expect": false
+  },
+  {
+    "subject": "RE: pedido de material — seguimiento",
+    "body": "Juan, quería hacer seguimiento del pedido. Te reenvío el correo del proveedor. Como te comentaba en mi anterior correo, faltan los composites y dos cajas de guantes. No sé si viste mi mensaje del viernes; cuando puedas lo revisamos.",
+    "from": "Laura Pérez <administracion@miclinica.example>",
+    "expect": false
+  },
+  {
+    "subject": "Tu factura de junio y novedades en digitalización de la consulta",
+    "body": "Estimado cliente, adjuntamos la factura de tu pedido de junio. Además, hemos incorporado novedades para tu clínica en flujo digital y escáneres intraorales. Si te interesa te explico las condiciones de tu cuenta de cliente habitual. Un saludo del equipo de pedidos.",
+    "from": "Henry Schein España <pedidos@henryschein.es>",
+    "expect": false
+  },
+  {
+    "subject": "Comunicación oficial a las clínicas dentales de Granada",
+    "body": "En relación con el Registro de Centros Sanitarios, se requiere a las clínicas dentales de Granada la actualización de los datos del centro antes del 31 de julio. Acceda a la sede electrónica con certificado digital para completar el trámite. Atentamente, Delegación de Salud.",
+    "from": "Delegación de Salud — Junta de Andalucía <registro.centros.gr@juntadeandalucia.es>",
+    "expect": false
+  },
+  {
+    "subject": "¿Sabías que la IA ya ayuda en el diagnóstico dental?",
+    "body": "En el número de junio: cómo la inteligencia artificial está cambiando el diagnóstico por imagen, novedades en materiales de restauración y la agenda de cursos del mes. ¿Sabías que...? Lee el reportaje completo en tu área de suscriptor.",
+    "from": "Gaceta Dental <boletin@gacetadental.com>",
+    "expect": false
+  },
+  {
+    "subject": "Una pregunta rápida",
+    "body": "Juan, ¿tienes un minuto? Una pregunta rápida sobre el cuadrante de agosto: ¿quién se encarga de la caja el viernes que yo libro? Cuando puedas me dices. Gracias.",
+    "from": "Carlos Ejemplo <carlos@miclinica.example>",
+    "expect": false
+  },
+  {
+    "subject": "Re: cuadrante de julio",
+    "body": "como te comentaba en mi anterior correo, ¿quién revisa los fichajes esta semana? te paso mi calendario.",
+    "from": "recepcion@miclinica.example",
+    "expect": false
+  }
+]
